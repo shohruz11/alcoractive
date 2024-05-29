@@ -1229,6 +1229,8 @@ h1 {
 
 
 
+
+
 .pref {
   display: flex;
   justify-content: center;
@@ -1242,26 +1244,23 @@ h1 {
   text-align: center;
 }
 
-
-
-
 @media (max-width: 767px) {
-  .pref{
-    flex-direction: column;  /* Change flex direction to vertical for smaller screens */
+  .pref {
+    flex-direction: column;
   }
   .split {
-    width: 100%;  /* Take full width on smaller screens */
-    margin-bottom: 20px;  /* Add margin to create space between sections */
+    width: 100%;
+    margin-bottom: 20px;
   }
-
-  .right {
-    margin-top: 20px;  /* Add margin to create space between sections */
+  .split.right {
+    margin-top: 20px;
   }
-  }
+}
 
 strong {
   font-weight: 700;
 }
+
 
 
 
