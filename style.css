@@ -1230,10 +1230,8 @@ h1 {
 
 
 
-
 .pref {
   display: flex;
-  justify-content: center;
   margin-top: 40px;
 }
 
@@ -1245,10 +1243,25 @@ h1 {
 }
 
 
+
+
+@media (max-width: 767px) {
+  .pref{
+    flex-direction: column;  /* Change flex direction to vertical for smaller screens */
+  }
+  .split {
+    width: 100%;  /* Take full width on smaller screens */
+    margin-bottom: 20px;  /* Add margin to create space between sections */
+  }
+
+  .right {
+    margin-top: 20px;  /* Add margin to create space between sections */
+  }
+  }
+
 strong {
   font-weight: 700;
 }
-
 
 
 
