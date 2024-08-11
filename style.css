@@ -1290,7 +1290,7 @@ strong {
 }
 
 form input, form textarea {
-  width: 100%;
+  width: 100%; /* Default full width */
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1306,6 +1306,7 @@ form input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%; /* Default full width */
 }
 
 @media (max-width: 767px) {
@@ -1322,13 +1323,15 @@ form input[type="submit"] {
   }
 
   form input, form textarea {
-    width: calc(100% - 32px);  /* Adjust width to prevent overflow */
-    margin-left: 0;
-    margin-right: 0;
+    width: calc(100% - 130px); /* Adjust width to account for 65px margin on each side */
+    margin-left: 65px; /* Add 65px margin on the left */
+    margin-right: 65px; /* Add 65px margin on the right */
   }
 
   form input[type="submit"] {
-    width: calc(100% - 32px);  /* Adjust width to prevent overflow */
+    width: calc(100% - 130px); /* Adjust width to account for 65px margin on each side */
+    margin-left: 65px; /* Add 65px margin on the left */
+    margin-right: 65px; /* Add 65px margin on the right */
   }
 }
 
@@ -1529,6 +1532,7 @@ select {
     margin: 0 auto !important;
   }
 }
+
 
 
 
