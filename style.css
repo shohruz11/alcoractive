@@ -1089,7 +1089,6 @@ h1 {
 }
 
 
-
 #slider {
   margin: 0 auto;
   width: 1000px;
@@ -1237,6 +1236,43 @@ h1 {
     margin: 0 auto;
   }
 }
+
+
+
+
+/* .pref {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.split {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .pref{
+    flex-direction: column;  
+  }
+  .split {
+    width: 100%;  
+    margin-bottom: 20px;  
+  }
+
+  .right {
+    margin-top: 20px;  
+  }
+  }
+
+strong {
+  font-weight: 700;
+} */
 
 
 
@@ -1493,9 +1529,6 @@ select {
     margin: 0 auto !important;
   }
 }
-
-
-
 
 
 
