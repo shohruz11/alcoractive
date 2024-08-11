@@ -1253,11 +1253,27 @@ h1 {
   text-align: center;
 }
 
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
 
-
+form input[type="submit"] {
+  background-color: #96161f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 @media (max-width: 767px) {
-  .pref{
+  .pref {
     flex-direction: column;  /* Change flex direction to vertical for smaller screens */
   }
   .split {
@@ -1268,12 +1284,215 @@ h1 {
   .right {
     margin-top: 20px;  /* Add margin to create space between sections */
   }
+
+  form input, form textarea {
+    width: calc(100% - 32px);  /* Adjust width to prevent overflow */
+    margin-left: 0;
+    margin-right: 0;
   }
 
-strong {
-  font-weight: 700;
+  form input[type="submit"] {
+    width: calc(100% - 32px);  /* Adjust width to prevent overflow */
+  }
 }
 
+/* Default Styles */
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+  font-family: var(--primaryfont);
+  background-color: var(--lite);
+}
+
+.title, .sub-title {
+  font-family: var(--secondaryfont);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a, input, textarea, select, button {
+  outline: none !important;
+  transition: 0.5s;
+}
+
+fieldset {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+.btn1, .btn2 {
+  padding: 20px 40px;
+  border-radius: 40px;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+}
+
+.btn1 {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn1:hover {
+  background-color: var(--primarylite);
+}
+
+.btn2 {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.btn2:hover {
+  background-color: var(--darklite);
+}
+
+.title_header {
+  width: 100%;
+  margin: 2vh auto;
+  text-align: center;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.title_header section {
+  width: 100%;
+  text-align: left;
+}
+
+.title_header section p {
+  font-weight: 200;
+}
+
+.title_header .title {
+  font-size: 2em;
+  color: var(--dark);
+}
+
+.title_header .sub-title {
+  font-size: 1.5em;
+  color: var(--gray);
+}
+
+.border-shape {
+  background: var(--primary) none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 20px auto;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 80px;
+}
+
+.border-shape::before {
+  background: var(--primary) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 80px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 1px;
+  width: 100%;
+}
+
+.border-shape::after {
+  background: var(--primary) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  margin: 0 auto;
+  position: absolute;
+  right: 80px;
+  text-align: center;
+  top: 1px;
+  width: 100%;
+}
+
+.bg_overlay {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(1, 1, 1, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1 !important;
+}
+
+:-moz-placeholder {
+  opacity: 1 !important;
+}
+
+::-moz-placeholder {
+  opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(port.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 4rem;
+  padding: 1rem;
+  padding-right: 4rem;
+}
+
+@media (max-width: 1180px) {
+  .half-column {
+    display: block;
+  }
+}
+
+@media (max-width: 820px) {
+  .btn1, .btn2 {
+    padding: 10px 15px;
+  }
+  .title_header {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .title_header .title {
+    font-size: 1.3em;
+  }
+  .title_header section {
+    padding: 0rem 0 !important;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+}
 
 
 
